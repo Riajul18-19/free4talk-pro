@@ -1,0 +1,14 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and databases
+*.log
+*.sqlite
+
+# IDE & agent artifacts
+.agents/
+.gemini/
+.idea/
+.vscode/

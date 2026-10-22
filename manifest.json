@@ -1,0 +1,98 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 3,
+  "name": "Free4talk Pro",
+  "description": "Powerful tools to enhance your Free4Talk experience with user insights and more.",
+  "version": "0.11.0",
+  "author": {
+    "email": "info@free4talk.me"
+  },
+  "homepage_url": "https://github.com/immdipu/f4t-tools-extension-releases",
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "identity",
+    "scripting",
+    "activeTab"
+  ],
+  "optional_host_permissions": [
+    "https://www.youtube.com/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "https://free4talk.com/*",
+        "https://www.free4talk.com/*"
+      ],
+      "resources": [
+        "assets/autoKick-Dp0kSw2g.js",
+        "assets/config-Ce4MWhzI.js",
+        "assets/logger-C6gXeMnu.js",
+        "assets/talkTime-oTnPlHeS.js",
+        "assets/spotify-FguK52dt.js",
+        "assets/ytRemote-BcbPVE8e.js",
+        "assets/content.tsx-B2EXn89k.js",
+        "assets/mainWorldBridge.ts-CL6tIEi6.js"
+      ],
+      "use_dynamic_url": false
+    },
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "resources": [
+        "assets/ytRemote-BcbPVE8e.js",
+        "assets/ytRemote.ts-ZzSItsd7.js"
+      ],
+      "use_dynamic_url": false
+    }
+  ],
+  "icons": {
+    "16": "public/logo.png",
+    "32": "public/logo.png",
+    "48": "public/logo.png",
+    "128": "public/logo.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "public/logo.png",
+      "32": "public/logo.png",
+      "48": "public/logo.png",
+      "128": "public/logo.png"
+    },
+    "default_title": "Free4talk Pro",
+    "default_popup": "src/popup/index.html"
+  },
+  "host_permissions": [
+    "https://free4talk.com/*",
+    "https://www.free4talk.com/*"
+  ],
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "assets/content.tsx-loader-B5IfWW46.js"
+      ],
+      "matches": [
+        "https://free4talk.com/*",
+        "https://www.free4talk.com/*"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "js": [
+        "assets/mainWorldBridge.ts-loader-Cnzr8nLo.js"
+      ],
+      "matches": [
+        "https://free4talk.com/*",
+        "https://www.free4talk.com/*"
+      ],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    }
+  ]
+}

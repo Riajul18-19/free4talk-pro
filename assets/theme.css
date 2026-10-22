@@ -1,0 +1,284 @@
+/* Free4talk Pro - Modern Professional UI Theme */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
+  --font-mono: 'JetBrains Mono', monospace !important;
+  --color-brand: #0ea5e9 !important;
+  --color-brand-hi: #38bdf8 !important;
+  --color-page: #0b0f17 !important;
+  --color-surface: #0f172a !important;
+  --color-raised: #1e293b !important;
+  --color-subtle: #1e293b !important;
+  --color-hover: #334155 !important;
+  --color-ink: #f8fafc !important;
+  --color-ink-dim: #94a3b8 !important;
+  --color-ink-faint: #64748b !important;
+  --color-line: rgba(255, 255, 255, 0.08) !important;
+  --color-line-strong: rgba(255, 255, 255, 0.12) !important;
+  --color-success: #10b981 !important;
+  --color-danger: #f43f5e !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0b0f17 !important;
+  font-family: var(--font-sans) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #f8fafc;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(11, 15, 23, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.4);
+}
+
+/* Popup Container */
+.bg-page {
+  background: radial-gradient(circle at 50% -20px, rgba(14, 165, 233, 0.16) 0%, rgba(15, 23, 42, 0) 65%), #0b0f17 !important;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  padding-bottom: 2px;
+}
+header img {
+  border-radius: 11px !important;
+  border: 1px solid rgba(56, 189, 248, 0.35) !important;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.18) 0%, rgba(2, 132, 199, 0.05) 100%) !important;
+  box-shadow: 0 0 16px -2px rgba(14, 165, 233, 0.35) !important;
+  padding: 2px !important;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+header img:hover {
+  transform: scale(1.08) rotate(12deg) !important;
+  box-shadow: 0 0 24px rgba(14, 165, 233, 0.6) !important;
+  border-color: rgba(56, 189, 248, 0.6) !important;
+}
+
+/* Header Brand Name */
+.app-brand-title {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  background: linear-gradient(135deg, #ffffff 40%, #7dd3fc 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Pro Badge */
+.pro-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 1.5px 6.5px !important;
+  font-size: 9.5px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  border-radius: 9999px !important;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.25) 0%, rgba(59, 130, 246, 0.25) 100%) !important;
+  border: 1px solid rgba(56, 189, 248, 0.45) !important;
+  color: #38bdf8 !important;
+  box-shadow: 0 0 10px rgba(14, 165, 233, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Pulsing Live Dot */
+.animate-pulse-out {
+  background-color: #0ea5e9 !important;
+  box-shadow: 0 0 12px #0ea5e9, 0 0 4px #38bdf8 !important;
+}
+
+/* Cards */
+.card {
+  background: rgba(15, 23, 42, 0.65) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.07) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.04) !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  margin-bottom: 11px !important;
+}
+.card:hover {
+  border-color: rgba(56, 189, 248, 0.24) !important;
+  box-shadow: 0 8px 25px -4px rgba(0, 0, 0, 0.5), 0 0 15px -3px rgba(14, 165, 233, 0.15) !important;
+  transform: translateY(-1px) !important;
+}
+.card-head {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  padding-bottom: 7px !important;
+  margin-bottom: 10px !important;
+}
+.eyebrow {
+  font-size: 10.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  color: #94a3b8 !important;
+  text-transform: uppercase !important;
+}
+
+/* Switches */
+button[role="switch"] {
+  height: 20px !important;
+  width: 36px !important;
+  border-radius: 9999px !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative !important;
+}
+button[role="switch"][aria-checked="true"],
+button[role="switch"].bg-brand {
+  background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 100%) !important;
+  box-shadow: 0 0 14px rgba(14, 165, 233, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  border: 1px solid rgba(56, 189, 248, 0.5) !important;
+}
+button[role="switch"][aria-checked="false"] {
+  background: rgba(30, 41, 59, 0.8) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+button[role="switch"] > span {
+  height: 14px !important;
+  width: 14px !important;
+  border-radius: 9999px !important;
+  background: #ffffff !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35) !important;
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1), left 0.22s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+}
+
+/* Segmented Control (Live / On / Off toggle) */
+div[role="group"][aria-label="Toggle extension"] {
+  background: rgba(15, 23, 42, 0.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px !important;
+  padding: 3px !important;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+.seg {
+  border-radius: 9px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  padding-block: 8px !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.seg-active {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.2) 0%, rgba(2, 132, 199, 0.3) 100%) !important;
+  color: #38bdf8 !important;
+  box-shadow: 0 2px 8px rgba(14, 165, 233, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(56, 189, 248, 0.35) !important;
+}
+.seg-active .seg-dot {
+  background-color: #0ea5e9 !important;
+  box-shadow: 0 0 10px #0ea5e9 !important;
+}
+.seg-active-off {
+  background: rgba(30, 41, 59, 0.6) !important;
+  color: #94a3b8 !important;
+  border: 1px solid rgba(255, 255, 255, 0.07) !important;
+}
+
+/* Action Buttons */
+button.bg-brand, .bg-brand {
+  background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 60%, #38bdf8 100%) !important;
+  box-shadow: 0 4px 16px -2px rgba(14, 165, 233, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
+  border: 1px solid rgba(56, 189, 248, 0.4) !important;
+  border-radius: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  color: #ffffff !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+button.bg-brand:hover:not(:disabled), .bg-brand:hover:not(:disabled) {
+  transform: translateY(-1.5px) !important;
+  box-shadow: 0 6px 22px -2px rgba(14, 165, 233, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
+  border-color: rgba(56, 189, 248, 0.6) !important;
+}
+button.bg-brand:active:not(:disabled), .bg-brand:active:not(:disabled) {
+  transform: translateY(0) !important;
+  box-shadow: 0 2px 8px rgba(14, 165, 233, 0.4) !important;
+}
+
+/* Inputs & Textareas */
+input, textarea {
+  color: #f8fafc !important;
+  font-family: var(--font-sans) !important;
+}
+.bg-raised, .bg-subtle {
+  background: rgba(15, 23, 42, 0.75) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+  border-radius: 10px !important;
+  transition: all 0.2s ease !important;
+}
+.bg-raised:focus-within, .bg-subtle:focus-within {
+  border-color: rgba(56, 189, 248, 0.55) !important;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.18) !important;
+  background: rgba(15, 23, 42, 0.9) !important;
+}
+
+/* Chips */
+.chip {
+  border-radius: 8px !important;
+  font-family: inherit !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.01em !important;
+  text-transform: none !important;
+  padding: 4px 10px !important;
+  background: rgba(30, 41, 59, 0.65) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #94a3b8 !important;
+  transition: all 0.15s ease !important;
+}
+.chip:hover:not(:disabled) {
+  background: rgba(51, 65, 85, 0.75) !important;
+  color: #f8fafc !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+}
+.chip-brand, button.chip[aria-checked="true"] {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.22) 0%, rgba(2, 132, 199, 0.28) 100%) !important;
+  border-color: rgba(56, 189, 248, 0.5) !important;
+  color: #38bdf8 !important;
+  box-shadow: 0 0 10px rgba(14, 165, 233, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Form Labels & Microcopy */
+label span.text-\[11px\] {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: #e2e8f0 !important;
+}
+label span.text-\[10px\] {
+  font-size: 10.5px !important;
+  color: #64748b !important;
+  line-height: 1.35 !important;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+  margin-top: 14px !important;
+  padding-top: 12px !important;
+}
+.foot-meta {
+  font-size: 11px !important;
+  color: #64748b !important;
+  transition: color 0.2s ease !important;
+}
+.foot-meta:hover {
+  color: #38bdf8 !important;
+}

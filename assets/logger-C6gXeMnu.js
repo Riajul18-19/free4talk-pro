@@ -1,0 +1,1 @@
+const r="[F4T]";function e(){return typeof window>"u"?"bg":window.location?.protocol==="chrome-extension:"?"popup":"content"}function n(){return`${r} ${e()}`}const t={log(...o){console.log(n(),...o)},warn(...o){console.warn(n(),...o)},error(...o){console.error(n(),...o)}};export{t as l};
