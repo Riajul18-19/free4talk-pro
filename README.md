@@ -25,16 +25,21 @@
 
 ## 🚀 Installation
 
-1. Clone or download this repository:
+### Option 1: Download Pre-built Release (.zip)
+1. Download the latest `free4talk-pro-v1.0.0.zip` from [Releases](https://github.com/Riajul18-19/free4talk-pro/releases).
+2. Unzip the downloaded file to a folder on your computer.
+3. Open Chrome or any Chromium-based browser (Brave, Edge, Opera, Vivaldi).
+4. Go to `chrome://extensions`.
+5. Enable **Developer mode** via the toggle switch in the top-right corner.
+6. Click **Load unpacked** in the top-left corner and select the extracted folder.
+7. Pin **Free4talk Pro** to your toolbar!
+
+### Option 2: Clone with Git
+1. Clone this repository:
    ```bash
    git clone https://github.com/Riajul18-19/free4talk-pro.git
    ```
-2. Open Google Chrome (or any Chromium browser like Brave, Edge, Opera).
-3. Navigate to `chrome://extensions`.
-4. Turn on **Developer mode** using the toggle in the top-right corner.
-5. Click **Load unpacked** in the top-left corner.
-6. Select the folder containing `manifest.json`.
-7. Pin **Free4talk Pro** to your extension bar and enjoy!
+2. Follow steps 3–7 above, selecting the cloned directory.
 
 ---
 

@@ -12,3 +12,6 @@ desktop.ini
 .gemini/
 .idea/
 .vscode/
+
+# Build and release archives
+*.zip

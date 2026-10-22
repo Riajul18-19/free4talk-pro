@@ -4,11 +4,11 @@
   "manifest_version": 3,
   "name": "Free4talk Pro",
   "description": "Powerful tools to enhance your Free4Talk experience with user insights and more.",
-  "version": "0.11.0",
+  "version": "1.0.0",
   "author": {
     "email": "info@free4talk.me"
   },
-  "homepage_url": "https://github.com/immdipu/f4t-tools-extension-releases",
+  "homepage_url": "https://github.com/Riajul18-19/free4talk-pro",
   "permissions": [
     "storage",
     "unlimitedStorage",
